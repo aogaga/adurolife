@@ -9,7 +9,13 @@
     3. run "bash run.sh"
 
 
-### please find sample payload code below 
+#### API URL 
+http://localhost:8080/
+
+#### API URL / SWAGGER URL
+http://localhost:8080/swagger-ui-custom.html
+
+#### please find sample payload code below 
 
 <pre><code>
 {
