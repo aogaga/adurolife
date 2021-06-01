@@ -6,4 +6,4 @@
 ### To run the application 
     1. git clone this repo
     2. cd to the root directory 
-    3. run bash run.sh
+    3. run "bash run.sh"
