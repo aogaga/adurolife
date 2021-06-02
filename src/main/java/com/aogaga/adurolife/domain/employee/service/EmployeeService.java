@@ -21,7 +21,6 @@ public class EmployeeService implements CrudService<EmployeeDto> {
     public EmployeeDto create(EmployeeDto entity) {
 
         Employee employee = employeeRepository.save(entity.convertToEmployee());
-
         return employee.convertToDto();
     }
 
@@ -50,7 +49,8 @@ public class EmployeeService implements CrudService<EmployeeDto> {
 
     @Override
     public EmployeeDto update(EmployeeDto entity) {
-        Employee updatedEmployee =  employeeRepository.save(entity.convertToEmployee());
+        Employee employee = employeeRepository.getById(entity.getId());
+        Employee updatedEmployee =  employeeRepository.save(employee);
         return updatedEmployee.convertToDto();
     }
 
